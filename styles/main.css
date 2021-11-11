@@ -1,0 +1,102 @@
+body {
+  background-color: #81c3d7;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  background-color: #16425b;
+  color: white;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 3;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+main {
+  display: flex;
+  border: 1px solid black;
+  /* padding: 1em;
+  margin: 1em; */
+  flex-wrap: wrap;
+}
+
+sidebar {
+  flex: 1;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.content__fish-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #3a7ca5;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.content__quote-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #3a7ca5;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.content__location-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #3a7ca5;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.fish-card {
+  background-color: #81c3d7;
+  color: black;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.quote-card {
+  background-color: #81c3d7;
+  color: black;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.location-card {
+  background-color: #81c3d7;
+  color: black;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.fishtips-card {
+  background-color: #3a7ca5;
+  color: white;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}
