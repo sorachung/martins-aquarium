@@ -60,7 +60,7 @@ sidebar {
   margin: 1em;
 }
 
-.content__location-list {
+.content__locations-list {
   display: flex;
   flex-wrap: wrap;
   background-color: #3a7ca5;
@@ -85,7 +85,7 @@ sidebar {
   margin: 1em;
 }
 
-.location-card {
+.locations-card {
   background-color: #81c3d7;
   color: black;
   border: 1px solid black;

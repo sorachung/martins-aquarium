@@ -3,6 +3,7 @@ import { getTips } from './database.js'
 import { getLocations } from './database.js'
 import { FishList } from './fish/FishList.js';
 import { tipList } from './tips/tipList.js';
+import { locationsList } from './locations/locationsList.js';
 
 
 // const allFish = getFish();
@@ -11,52 +12,12 @@ import { tipList } from './tips/tipList.js';
 //     console.log(fish);
 // }
 
-const parentHTMLElement = document.querySelector(".content");
-parentHTMLElement.innerHTML = FishList();
+const parentHTMLElementFish = document.querySelector(".content");
+parentHTMLElementFish.innerHTML += FishList();
 
 const parentHTMLElementTips = document.querySelector(".tips");
-parentHTMLElementTips.innerHTML = tipList();
+parentHTMLElementTips.innerHTML += tipList();
 
+const parentHTMLElementLocations = document.querySelector(".content");
+parentHTMLElementLocations.innerHTML += locationsList();
 
-/* <article class="content__fish-list">
-          <section class="fish-card">
-            <h4>Nickname</h4>
-            <img src="images/goldfish.jpg" alt="goldfish" />
-            <ul>
-              <li>Goldfish</li>
-              <li>3 in</li>
-              <li>harvested near here</li>
-              <li>food</li>
-            </ul>
-          </section>
-          <section class="fish-card">
-            <h4>Nickname</h4>
-            <ul>
-              <li>IMAGE</li>
-              <li>species</li>
-              <li>length</li>
-              <li>harvest location</li>
-              <li>diet</li>
-            </ul>
-          </section>
-          <section class="fish-card">
-            <h4>Nickname</h4>
-            <ul>
-              <li>IMAGE</li>
-              <li>species</li>
-              <li>length</li>
-              <li>harvest location</li>
-              <li>diet</li>
-            </ul>
-          </section>
-          <section class="fish-card">
-            <h4>Nickname</h4>
-            <ul>
-              <li>IMAGE</li>
-              <li>species</li>
-              <li>length</li>
-              <li>harvest location</li>
-              <li>diet</li>
-            </ul>
-          </section>
-        </article> */
