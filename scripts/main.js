@@ -1,5 +1,5 @@
-import { getFish } from './database.js';
-import { FishList } from './FishList.js';
+import { getFish } from './fish/database.js';
+import { FishList } from './fish/FishList.js';
 
 
 // const allFish = getFish();
