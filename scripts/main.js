@@ -1,5 +1,10 @@
-import { getFish } from './database.js';
-import { FishList } from './FishList.js';
+// import { getFish } from './database.js';
+// import { getTips } from './database.js'
+// import { getLocations } from './database.js'
+import { FishList } from './fish/FishList.js';
+import { tipList } from './tips/tipList.js';
+import { quotesList } from './quotes/quotesList.js'
+import { locationsList } from './locations/locationsList.js';
 
 
 // const allFish = getFish();
@@ -9,48 +14,7 @@ import { FishList } from './FishList.js';
 // }
 
 const parentHTMLElement = document.querySelector(".content");
-parentHTMLElement.innerHTML = FishList();
+parentHTMLElement.innerHTML += FishList() + quotesList() + locationsList();
 
-
-/* <article class="content__fish-list">
-          <section class="fish-card">
-            <h4>Nickname</h4>
-            <img src="images/goldfish.jpg" alt="goldfish" />
-            <ul>
-              <li>Goldfish</li>
-              <li>3 in</li>
-              <li>harvested near here</li>
-              <li>food</li>
-            </ul>
-          </section>
-          <section class="fish-card">
-            <h4>Nickname</h4>
-            <ul>
-              <li>IMAGE</li>
-              <li>species</li>
-              <li>length</li>
-              <li>harvest location</li>
-              <li>diet</li>
-            </ul>
-          </section>
-          <section class="fish-card">
-            <h4>Nickname</h4>
-            <ul>
-              <li>IMAGE</li>
-              <li>species</li>
-              <li>length</li>
-              <li>harvest location</li>
-              <li>diet</li>
-            </ul>
-          </section>
-          <section class="fish-card">
-            <h4>Nickname</h4>
-            <ul>
-              <li>IMAGE</li>
-              <li>species</li>
-              <li>length</li>
-              <li>harvest location</li>
-              <li>diet</li>
-            </ul>
-          </section>
-        </article> */
+const parentHTMLElementTips = document.querySelector(".tips");
+parentHTMLElementTips.innerHTML += tipList();
