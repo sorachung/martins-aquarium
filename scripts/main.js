@@ -2,11 +2,11 @@ import { getFish } from './database.js';
 import { FishList } from './FishList.js';
 
 
-const allFish = getFish();
+// const allFish = getFish();
 
-for (const fish of allFish) {
-    console.log(fish);
-}
+// for (const fish of allFish) {
+//     console.log(fish);
+// }
 
 const parentHTMLElement = document.querySelector(".content");
 parentHTMLElement.innerHTML = FishList();
