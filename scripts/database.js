@@ -56,6 +56,7 @@ const database = {
     }
     
   ],
+
   locations: [
     {
       id: 1,
@@ -85,6 +86,29 @@ const database = {
       location: "near mom's house",
       blurb: "It was cool"
     }
+  ],
+
+  quotes: [
+    {
+      id: 1,
+      text: "this is a quote",
+      source: "Me"
+    },
+    {
+      id: 2,
+      text: "this is a quote",
+      source: "Me"
+    },
+    {
+      id: 3,
+      text: "this is a quote",
+      source: "Me"
+    },
+    {
+      id: 4,
+      text: "this is a quote",
+      source: "Me"
+    }
   ]
   };
 
@@ -98,4 +122,8 @@ export const getTips = () => {
 
 export const getLocations = () => {
   return database.locations.map((locations) => ({ ...locations }));
+};
+
+export const getQuotes = () => {
+  return database.quotes.map((quotes) => ({ ...quotes }));
 };
