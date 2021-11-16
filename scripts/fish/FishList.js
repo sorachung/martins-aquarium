@@ -1,4 +1,4 @@
-import { getFish } from "./database.js";
+import { getFish } from "../database.js";
 import { mostHolyFish } from "./fishData.js";
 import { soldierFish } from "./fishData.js";
 import { nonHolyFish } from "./fishData.js";

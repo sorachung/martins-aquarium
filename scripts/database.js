@@ -37,8 +37,31 @@ const database = {
       food: "food"
     }
   ],
-};
+
+  tips: [
+    {
+      id: 1,
+      title: "Tank Cleanliness:",
+      body: "the process of keeping the tank clean"
+    },
+    {
+      id: 2,
+      title: "Water Salinity:",
+      body: "the process of keeping the water at the right salinity"
+    },
+    {
+      id: 3,
+      title: "Water Temperature:",
+      body: "the process of keeping the water at the right temperature"
+    }
+    
+  ]
+  };
 
 export const getFish = () => {
   return database.fish.map((fish) => ({ ...fish }));
+};
+
+export const getTips = () => {
+  return database.tips.map((tips) => ({ ...tips }));
 };

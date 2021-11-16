@@ -1,4 +1,4 @@
-import { getFish } from './database.js';
+import { getFish } from '../database.js';
 
 const fishes = getFish()
 
@@ -19,7 +19,7 @@ export const soldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
     const soldiers = [];
     for (const fish of fishes) {
-        if (fish.size % 5 === 0) {
+        if (fish.size % 5 === 0 && fish.size %3 !== 0) {
             soldiers.push(fish);
         }
     }

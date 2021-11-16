@@ -1,5 +1,7 @@
-import { getFish } from './fish/database.js';
+import { getFish } from './database.js';
+import { getTips } from './database.js'
 import { FishList } from './fish/FishList.js';
+import { tipList } from './tips/tipList.js';
 
 
 // const allFish = getFish();
@@ -10,6 +12,9 @@ import { FishList } from './fish/FishList.js';
 
 const parentHTMLElement = document.querySelector(".content");
 parentHTMLElement.innerHTML = FishList();
+
+const parentHTMLElementTips = document.querySelector(".tips");
+parentHTMLElementTips.innerHTML = tipList();
 
 
 /* <article class="content__fish-list">
