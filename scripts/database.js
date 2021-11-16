@@ -55,6 +55,36 @@ const database = {
       body: "the process of keeping the water at the right temperature"
     }
     
+  ],
+  locations: [
+    {
+      id: 1,
+      name: "The Lake of Tomorrow",
+      dateVisited: 2011,
+      location: "near here",
+      blurb: "It was cool"
+    },
+    {
+      id: 2,
+      name: "The Lake of Tomorrow",
+      dateVisited: 2011,
+      location: "over here",
+      blurb: "It was cool"
+    },
+    {
+      id: 3,
+      name: "The Lake of Tomorrow",
+      dateVisited: 2011,
+      location: "Alaska",
+      blurb: "It was cool"
+    },
+    {
+      id: 4,
+      name: "The Lake of Tomorrow",
+      dateVisited: 2011,
+      location: "near mom's house",
+      blurb: "It was cool"
+    }
   ]
   };
 
@@ -64,4 +94,8 @@ export const getFish = () => {
 
 export const getTips = () => {
   return database.tips.map((tips) => ({ ...tips }));
+};
+
+export const getLocations = () => {
+  return database.locations.map((locations) => ({ ...locations }));
 };
